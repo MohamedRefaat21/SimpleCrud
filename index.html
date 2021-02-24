@@ -1,0 +1,62 @@
+<html>
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;538;557&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/index_style.css">
+</head>
+<body>
+
+<div class="container py-5">    
+  <div class="form-group py-3">
+    <h1 class="text-center py-2">Simple Crud</h1>
+      <input class="form-control" type="text" id="productNameInput" placeholder="ProductName">
+  </div>
+  <div class="form-group py-3">
+    <input class="form-control" type="number" id="productPriceInput" placeholder="ProductPrice">
+</div>
+<div class="form-group py-3">
+    <input class="form-control" type="text" id="ProductCategoryInput" placeholder="ProductCategory">
+</div>
+<div class="form-group py-3">
+    <textarea class="form-control" type="text" id="productDescInput" placeholder="ProductDescription"></textarea>
+</div>
+<button id="mainBtn" onclick="addProduct();" class="btn btn-danger fg">add Product</button>
+</div>
+<div class="container">
+
+  <input onkeyup="searchProduct(this.value)" placeholder="search product" class="form-control w-75 m-auto" type="text" name="" id="">
+
+  <table class="table mt-4">
+      <thead>
+          <th>index</th>
+          <th>ProductName</th>
+          <th>ProductPrice</th>
+          <th>ProductCategory</th>
+          <th>ProductDesc</th>
+          <th>update</th>
+          <th>delete</th>
+
+      </thead>
+      <tbody id="tableBody">
+         
+       
+      </tbody>
+  </table>
+
+</div>
+
+
+  
+
+
+        <script src="js/jquery-3.5.1.slim.min.js"></script>    
+        <script src="js/popper.min.js"></script>    
+        <script src="js/bootstrap.min.js"></script>    
+        <script src="js/wow.min.js"></script>
+        <script src="js/main.js"></script>    
+    </body>
+    </html>
